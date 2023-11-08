@@ -1,0 +1,350 @@
+.cursor-pointer {
+  cursor: pointer;
+}
+section.home {
+  font-family: "Sora", sans-serif;
+  /* color: #9aa2ac; */
+}
+/* .expenses .title {
+  padding-top: 18px;
+  font-size: 16px;
+  color: #9aa2ac;
+  font-weight: 600;
+}
+.expenses .circles {
+  position: relative;
+  height: 195px;
+}
+.expenses .circles .green {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: linear-gradient(
+    206deg,
+    #02af72 16.58%,
+    rgba(2, 175, 114, 0.5) 100.02%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  font-family: "Sora", sans-serif;
+  position: absolute;
+  left: 100px;
+  top: 10px;
+  z-index: 3;
+}
+.expenses .circles .blue {
+  width: 97px;
+  height: 97px;
+  border-radius: 50%;
+  background: linear-gradient(
+    207deg,
+    #6c50fc 16.64%,
+    rgba(108, 80, 252, 0.5) 100.18%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Sora", sans-serif;
+  position: absolute;
+  top: 82px;
+  left: -36px;
+  z-index: 2;
+}
+.expenses .circles .orange {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background: linear-gradient(
+    225deg,
+    #ff742c -0.22%,
+    rgba(255, 116, 44, 0.5) 100.16%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Sora", sans-serif;
+  position: absolute;
+  top: 76px;
+  right: -33px;
+  z-index: 1;
+}
+.expenses .lables {
+  padding: 12px;
+  color: #27292c;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Sora", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.expenses .lables .lable-green {
+  position: relative;
+  display: flex;
+}
+.expenses .lables .lable-green::before {
+  content: "";
+  position: absolute;
+  left: -18px;
+  top: 4px;
+  background-color: #faf9ff;
+  border: 3px solid #02af72;
+  width: 12px;
+  height: 12px;
+  border-radius: 25px;
+}
+.expenses .lables .lable-blue {
+  position: relative;
+  display: flex;
+}
+.expenses .lables .lable-blue::before {
+  content: "";
+  position: absolute;
+  left: -18px;
+  top: 4px;
+  background-color: #faf9ff;
+  border: 3px solid #6c50fc;
+  width: 12px;
+  height: 12px;
+  border-radius: 25px;
+}
+.expenses .lables .lable-orange {
+  position: relative;
+  display: flex;
+}
+.expenses .lables .lable-orange::before {
+  content: "";
+  position: absolute;
+  left: -18px;
+  top: 4px;
+  background-color: #faf9ff;
+  border: 3px solid #ff742c;
+  width: 12px;
+  height: 12px;
+  border-radius: 25px;
+} */
+.travel-info,
+.person-info,
+.dest-info {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 16px;
+}
+.travel-info .t-date-title,
+.person-info .person-title,
+.dest-info .dest-title {
+  color: #9aa2ac;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Sora", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  line-height: 24px;
+}
+.travel-info .t-days,
+.dest-info .destination {
+  font-family: "Sora", sans-serif;
+  color: #27292c;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  padding-bottom: 18px;
+}
+.travel-info .date {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "Sora", sans-serif;
+  color: #27292c;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 142.857% */
+}
+
+.travel-info .date mat-icon {
+  color: #346aff;
+}
+.person-info .person {
+  font-family: "Sora", sans-serif;
+  color: #27292c;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  padding-bottom: 12px;
+}
+.person-info .person span {
+  color: #27292c;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+}
+
+.person-info .other {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.person-info .other .left {
+  display: flex;
+  align-items: center;
+}
+.person-info .other .left .avtr1 {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.person-info .other .left .avtr2 {
+  position: absolute;
+  left: 24px;
+}
+.person-info .other .left .name {
+  padding-left: 24px;
+  color: #27292c;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+}
+.person-info .other .right {
+  border: 1px solid black;
+  border-radius: 50px;
+  padding: 5px 6px 0 5px;
+}
+.dest-info .country-time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dest-info .country-time .country {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+}
+.dest-info .country-time .country mat-icon {
+  color: #9aa2ac;
+}
+
+.dest-info .country-time .country .poland,
+.dest-info .country-time .country .itly {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dest-info .country-time .country .poland .city-name,
+.dest-info .country-time .country .itly .city-name {
+  font-family: "Sora", sans-serif;
+  color: #27292c;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px; /* 142.857% */
+  padding-left: 8px;
+}
+.dest-info .country-time .time {
+  display: flex;
+  align-items: center;
+}
+
+.dest-info .country-time .time div {
+  font-family: "Sora", sans-serif;
+  color: #27292c;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+}
+.map-todos .todo-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.map-todos .todo-heading .title {
+  color: #27292c;
+  font-family: "Sora", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 48px;
+}
+.map-todos .todo-heading .sort {
+  display: flex;
+  align-items: center;
+}
+.map-todos .todo-heading .sort div {
+  color: #27292c;
+  font-size: 16px;
+  font-family: "Sora", sans-serif;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+::ng-deep .todo-table .mat-elevation-z8,
+.mat-mdc-elevation-specific.mat-elevation-z8 {
+  box-shadow: none !important;
+  /* 142.857% */
+}
+
+::ng-deep .todo-table .mat-mdc-table {
+  background-color: transparent !important;
+}
+::ng-deep .todo-table .mat-mdc-header-cell {
+  border-bottom-style: none !important;
+  color: #9aa2ac !important;
+  font-family: "Sora", sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 20px !important;
+}
+
+::ng-deep .todo-table .mat-mdc-cell {
+  border-bottom-style: none !important;
+  color: #27292c !important;
+  font-family: "Sora", sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 20px !important;
+  cursor: move !important;
+}
+.add-task-btn {
+  width: 100%;
+  margin-top: 10px;
+}
+::ng-deep .add-task-btn .mdc-button .mdc-button__label {
+  color: #6b7178 !important;
+  font-family: "Sora", sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  line-height: 24px !important; /* 150% */
+}
+.add-task-btn mat-icon {
+  order: 1;
+  color: #6b7178 !important;
+  font-weight: 600 !important;
+  margin-left: 10px;
+}
+::ng-deep .add-task-btn .mat-mdc-outlined-button:not(:disabled) {
+  border-color: 1px solid #9aa2ac !important;
+  width: 100%;
+  border-radius: 16px !important;
+  padding: 22px !important;
+}
+@media screen and (max-width: 723px) {
+  .todo-table {
+    width: 580px;
+    overflow-x: scroll;
+  }
+}

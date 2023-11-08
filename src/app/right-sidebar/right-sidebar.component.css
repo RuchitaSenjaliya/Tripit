@@ -1,0 +1,203 @@
+.profile-top {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 4px;
+}
+.profile-top .notify {
+  position: relative;
+  margin: 0 16px;
+}
+.profile-top .notify .red-status {
+  position: absolute;
+  right: 3px;
+  top: -1px;
+  width: 10px;
+  height: 10px;
+  background-color: #de1c20;
+  border-radius: 10px;
+}
+.profile-top .profile {
+  display: flex;
+  align-items: center;
+}
+.profile-top .profile .name {
+  font-size: 0.9rem;
+  padding-right: 8px;
+  font-family: "Sora", sans-serif;
+  color: #27292c;
+  font-weight: 500;
+}
+/* .profile .green-active {
+  position: absolute;
+  right: 3px;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #02af72;
+  border-radius: 10px;
+} */
+.calender .heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+}
+.calender .heading .title {
+  color: #27292c;
+  font-family: "Sora", sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px; /* 150% */
+}
+::ng-deep
+  .calender
+  .heading
+  .btn-black-icon
+  .mat-mdc-raised-button:not(:disabled) {
+  background-color: #27292c !important;
+  color: #fff;
+  border-radius: 12px !important;
+  padding: 12px 16px !important;
+}
+::ng-deep .calender .heading .btn-black-icon mat-icon {
+  /* display: flex;
+    align-items: center; */
+  order: 1;
+  margin-top: 2px;
+}
+::ng-deep
+  .calender
+  .heading
+  .btn-black-icon
+  .mat-mdc-unelevated-button
+  > .mat-icon,
+.mat-mdc-raised-button > .mat-icon,
+.mat-mdc-outlined-button > .mat-icon {
+  margin-left: 12px !important;
+}
+
+::ng-deep .calender .heading .btn-black-icon .mat-mdc-raised-button {
+  box-shadow: none;
+}
+::ng-deep .date-picker .mat-mdc-card {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+.time-frame {
+  padding: 12px 0;
+}
+.time-frame .time {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 77px;
+}
+.time-frame .time .text {
+  color: #9aa2ac;
+  font-family: "Sora", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+}
+.time-frame .time .line {
+  width: 230px;
+  height: 1px;
+  opacity: 0.15;
+  background: #27292c;
+  z-index: 2;
+}
+
+.time-frame .time .box {
+  width: 210px;
+  height: 80px;
+  border-radius: 16px;
+  position: absolute;
+  top: -77px;
+  left: 56px;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8px;
+  font-family: "Sora", sans-serif;
+}
+.time-frame .time .blue-box {
+  background-color: #d7e0fd;
+  color: #356bff;
+  height: 237px;
+  top: -178px;
+}
+.time-frame .time .blue-box .left .circle {
+  background-color: #bfd0fd;
+  padding: 7px 6px 2px 5px;
+  border-radius: 50px;
+  margin-right: 5px;
+}
+.time-frame .time .blue-box .left .title {
+  font-weight: 600;
+  font-size: 13px;
+}
+.time-frame .time .green-box {
+  background-color: #d0efe5;
+  color: #12b47b;
+}
+.time-frame .time .green-box .left .circle {
+  background-color: #a4d1c7;
+  padding: 7px 6px 2px 5px;
+  border-radius: 50px;
+  margin-right: 5px;
+}
+.time-frame .time .green-box .left .title {
+  font-weight: 600;
+  font-size: 13px;
+}
+.time-frame .time .orange-box {
+  background-color: #fbedef;
+  color: #fe742b;
+  height: 115px;
+}
+.time-frame .time .orange-box .left .circle {
+  background-color: #fbdbce;
+  padding: 7px 6px 2px 5px;
+  border-radius: 50px;
+  margin-right: 5px;
+}
+.time-frame .time .orange-box .left .title {
+  font-weight: 600;
+  font-size: 12px;
+}
+@media screen and (max-width: 1220px) {
+  .calender .heading {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .calender .heading .title {
+    font-size: 1.2rem;
+  }
+  .calender .heading .btn-black-icon {
+    align-self: center;
+  }
+}
+@media screen and (max-width: 1030px) {
+  .profile-top .profile .name {
+    font-size: 0.7rem;
+    padding-right: 8px;
+    font-family: "Sora", sans-serif;
+  }
+  .profile-top .notify {
+    position: relative;
+    margin: 0 16px 0 8px;
+  }
+}
+@media screen and (max-width: 1014px) {
+  ::ng-deep .calender .date-picker .mat-calendar-body-cell-content {
+    font-size: 10px !important;
+  }
+
+  ::ng-deep .calender .date-picker .mdc-button .mdc-button__label {
+    font-size: 12px;
+  }
+}

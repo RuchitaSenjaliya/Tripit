@@ -1,0 +1,40 @@
+.start-content {
+  width: 16%;
+  background-color: #faf9ff;
+  height: 100vh;
+  overflow: auto;
+}
+.main-content {
+  background-color: #faf9ff;
+  padding: 8px 12px;
+  height: 100vh;
+  overflow: auto;
+}
+.end-content {
+  background-color: #faf9ff;
+  height: 100vh;
+  overflow: auto;
+  width: 20%;
+  padding: 8px 0 8px 8px;
+}
+::ng-deep .mat-drawer-side {
+  border-right: none !important;
+}
+::ng-deep .mat-drawer-side.mat-drawer-end {
+  border-left: none !important;
+}
+
+::ng-deep
+  .mdc-text-field--filled:not(.mdc-text-field--disabled)
+  .mdc-floating-label,
+.mdc-text-field--filled:not(.mdc-text-field--disabled)
+  .mdc-floating-label--float-above,
+::ng-deep .mat-mdc-select-arrow {
+  color: #27292c !important;
+  font-size: 1rem !important;
+}
+@media screen and (max-width: 900px) {
+  .end-content {
+    display: none;
+  }
+}

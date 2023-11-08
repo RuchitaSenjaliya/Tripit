@@ -1,0 +1,104 @@
+.left-sidebar {
+  margin: 16px 0 0 8px;
+  background-color: #fff;
+  border-radius: 16px;
+}
+.logo {
+  text-align: center;
+  padding: 12px 0;
+}
+.btn-blue-icon {
+  margin: 12px 24px 36px 24px;
+}
+::ng-deep .btn-blue-icon .mat-mdc-raised-button:not(:disabled) {
+  background-color: #346aff !important;
+  color: #fff;
+  width: 100% !important;
+  border-radius: 16px !important;
+  padding: 25px 0 !important;
+}
+::ng-deep .btn-blue-icon mat-icon {
+  order: 1;
+  margin-top: 2px;
+}
+::ng-deep .btn-blue-icon .mat-mdc-unelevated-button > .mat-icon,
+.mat-mdc-raised-button > .mat-icon,
+.mat-mdc-outlined-button > .mat-icon {
+  margin-left: 15px !important;
+}
+
+::ng-deep .btn-blue-icon .mat-mdc-raised-button {
+  box-shadow: 0px 8px 8px 0px rgba(52, 106, 255, 0.15);
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 24px;
+}
+.navbar .link {
+  display: flex;
+  align-items: center;
+  padding: 12px 0 12px 12px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #27292c;
+  font-family: "Sora", sans-serif;
+  cursor: pointer;
+  margin: 6px 0;
+  background-color: #faf9ff;
+  border-radius: 16px;
+  width: 100%;
+}
+
+.navbar .link a {
+  text-decoration: none;
+  color: #27292c;
+  padding-left: 12px;
+}
+.navbar .link.active mat-icon {
+  color: #27292c;
+}
+.navbar .link mat-icon {
+  color: #9aa2ac;
+}
+
+@media screen and (max-width: 1180px) {
+  .navbar {
+    margin: 0 12px;
+  }
+  .navbar .link {
+    padding: 12px;
+    width: auto;
+  }
+  ::ng-deep .btn-blue-icon .mat-mdc-unelevated-button > .mat-icon,
+  .mat-mdc-raised-button > .mat-icon,
+  .mat-mdc-outlined-button > .mat-icon {
+    margin-left: 4px !important;
+  }
+  .btn-blue-icon {
+    margin: 12px 6px 36px 6px;
+  }
+  ::ng-deep .btn-blue-icon .mat-mdc-raised-button:not(:disabled) {
+    width: 90% !important;
+    border-radius: 12px !important;
+    padding: 22px 0 !important;
+  }
+}
+@media screen and (max-width: 980px) {
+  .hide {
+    display: none;
+  }
+  .navbar {
+    margin: 0 0;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 800px) {
+  ::ng-deep .btn-blue-icon .mat-mdc-unelevated-button > .mat-icon,
+  .mat-mdc-raised-button > .mat-icon,
+  .mat-mdc-outlined-button > .mat-icon {
+    margin-left: 0 !important;
+  }
+}
