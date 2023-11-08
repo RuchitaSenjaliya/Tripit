@@ -1,7 +1,10 @@
 .top-bar {
   display: flex;
 }
-
+::placeholder {
+  font-family: "Sora", sans-serif;
+  font-size: 1rem;
+}
 ::ng-deep .top-bar .travels .mat-mdc-form-field-bottom-align::before,
 ::ng-deep .top-bar .search .mat-mdc-form-field-bottom-align::before {
   content: none !important;
@@ -55,11 +58,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-family: "Sora", sans-serif;
 }
 ::ng-deep .top-bar .search .mat-mdc-form-field {
   width: 100% !important;
-}
-
-::ng-deep .mat-mdc-form-field-infix {
-  min-height: auto !important;
 }

@@ -41,7 +41,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 0;
+  padding: 16px 8px;
 }
 .calender .heading .title {
   color: #27292c;
@@ -122,7 +122,6 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 8px;
-  font-family: "Sora", sans-serif;
 }
 .time-frame .time .blue-box {
   background-color: #d7e0fd;
@@ -139,6 +138,7 @@
 .time-frame .time .blue-box .left .title {
   font-weight: 600;
   font-size: 13px;
+  font-family: "Sora", sans-serif;
 }
 .time-frame .time .green-box {
   background-color: #d0efe5;
@@ -152,6 +152,7 @@
 }
 .time-frame .time .green-box .left .title {
   font-weight: 600;
+  font-family: "Sora", sans-serif;
   font-size: 13px;
 }
 .time-frame .time .orange-box {
@@ -165,9 +166,25 @@
   border-radius: 50px;
   margin-right: 5px;
 }
+.time-frame .time .blue-box .left .sub-title,
+.time-frame .time .green-box .left .sub-title,
+.time-frame .time .orange-box .left .sub-title {
+  font-family: "Sora", sans-serif;
+}
 .time-frame .time .orange-box .left .title {
+  font-family: "Sora", sans-serif;
   font-weight: 600;
   font-size: 12px;
+}
+@media screen and (max-width: 1424px) {
+  .time-frame .time .box {
+    width: 190px;
+  }
+}
+@media screen and (max-width: 1310px) {
+  .time-frame .time .box {
+    width: 170px;
+  }
 }
 @media screen and (max-width: 1220px) {
   .calender .heading {
@@ -179,6 +196,14 @@
   }
   .calender .heading .btn-black-icon {
     align-self: center;
+  }
+  .time-frame .time .box {
+    width: 150px;
+  }
+}
+@media screen and (max-width: 1112px) {
+  .time-frame .time .box {
+    width: 120px;
   }
 }
 @media screen and (max-width: 1030px) {

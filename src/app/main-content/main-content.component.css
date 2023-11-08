@@ -5,7 +5,8 @@ section.home {
   font-family: "Sora", sans-serif;
   /* color: #9aa2ac; */
 }
-/* .expenses .title {
+
+.expenses .title {
   padding-top: 18px;
   font-size: 16px;
   color: #9aa2ac;
@@ -132,7 +133,7 @@ section.home {
   width: 12px;
   height: 12px;
   border-radius: 25px;
-} */
+}
 .travel-info,
 .person-info,
 .dest-info {
@@ -211,7 +212,7 @@ section.home {
 }
 .person-info .other .left .avtr2 {
   position: absolute;
-  left: 24px;
+  left: 21px;
 }
 .person-info .other .left .name {
   padding-left: 24px;
@@ -319,10 +320,30 @@ section.home {
   line-height: 20px !important;
   cursor: move !important;
 }
+
+.low {
+  border-radius: 99px;
+  background: #9aa2ac;
+  color: #fff;
+  padding: 4px 12px;
+}
+.medium {
+  border-radius: 99px;
+  background: #ff742c;
+  color: #fff;
+  padding: 4px 12px;
+}
+.high {
+  border-radius: 99px;
+  background: #de1c22;
+  color: #fff;
+  padding: 4px 12px;
+}
 .add-task-btn {
   width: 100%;
   margin-top: 10px;
 }
+
 ::ng-deep .add-task-btn .mdc-button .mdc-button__label {
   color: #6b7178 !important;
   font-family: "Sora", sans-serif !important;
@@ -342,9 +363,77 @@ section.home {
   border-radius: 16px !important;
   padding: 22px !important;
 }
+@media screen and (max-width: 1320px) {
+  .expenses .circles {
+    height: 165px;
+  }
+  .expenses .circles .green {
+    left: 63px;
+    width: 100px;
+    height: 100px;
+  }
+  .expenses .circles .blue {
+    width: 87px;
+    height: 87px;
+    top: 68px;
+  }
+  .expenses .circles .orange {
+    width: 60px;
+    height: 60px;
+    top: 64px;
+    right: -29px;
+  }
+}
+@media screen and (max-width: 1105px) {
+  .expenses .circles .green {
+    left: 116px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .expenses .title {
+    padding-left: 70px;
+  }
+  .expenses .circles {
+    height: 195px;
+  }
+  .expenses .circles .green {
+    left: 263px;
+    width: 120px;
+    height: 120px;
+  }
+  .expenses .circles .blue {
+    width: 97px;
+    height: 97px;
+    top: 68px;
+  }
+  .expenses .circles .orange {
+    width: 68px;
+    height: 68px;
+    top: 64px;
+    right: -29px;
+  }
+}
 @media screen and (max-width: 723px) {
   .todo-table {
     width: 580px;
-    overflow-x: scroll;
+    overflow-x: auto;
+  }
+}
+@media screen and (max-width: 568px) {
+  .expenses .title {
+    padding-left: 40px;
+  }
+
+  .expenses .circles .green {
+    left: 163px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .expenses .title {
+    padding-left: 20px;
+  }
+
+  .expenses .circles .green {
+    left: 100px;
   }
 }

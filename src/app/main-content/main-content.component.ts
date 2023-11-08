@@ -19,7 +19,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
     position: 2,
     taskName: 'Urna nibh eget facilisis egestas mi',
     assignee: 'Marta',
-    priority: 'High',
+    priority: 'Low',
   },
   {
     position: 3,

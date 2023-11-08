@@ -10,8 +10,8 @@ interface Food {
 })
 export class TopSearchbarComponent {
   foods: Food[] = [
-    { value: 'steak-0', viewValue: 'Steak' },
-    { value: 'pizza-1', viewValue: 'Pizza' },
-    { value: 'tacos-2', viewValue: 'Tacos' },
+    { value: 'london-0', viewValue: 'London' },
+    { value: 'paris-1', viewValue: 'Paris' },
+    { value: 'newyork-2', viewValue: 'Newyork' },
   ];
 }

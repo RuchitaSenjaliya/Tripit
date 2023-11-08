@@ -1,6 +1,6 @@
 <section class="home">
-  <div class="row">
-    <div class="col-12 col-lg-8 col-xl-8 mx-auto">
+  <div class="row gy-3 gy-xl-0">
+    <div class="col-12 col-lg-12 col-xl-8 mx-auto">
       <img
         src="../../assets/Nearest trip 01.png"
         alt=""
@@ -8,13 +8,16 @@
         class="img-fluid"
       />
     </div>
-    <div class="col-12 col-lg-4 col-xl-4 expenses mx-auto text-center">
-      <img
-        src="../../assets/Expenses BOX.png"
-        alt=""
-        srcset=""
-        class="img-fluid"
-      />
+    <div class="col-12 col-lg-6 col-xl-4 expenses mx-auto">
+      <div class="text-center">
+        <img
+          src="../../assets/Expenses BOX.png"
+          alt=""
+          srcset=""
+          class="img-fluid"
+        />
+      </div>
+
       <!-- <div class="title">Expenses</div>
       <div class="circles">
         <div class="green">
@@ -246,7 +249,6 @@
           <table
             mat-table
             [dataSource]="dataSource"
-            class="mat-elevation-z8"
             cdkDropList
             (cdkDropListDropped)="drop($event)"
           >
@@ -260,19 +262,32 @@
             <!-- Name Column -->
             <ng-container matColumnDef="taskName">
               <th mat-header-cell *matHeaderCellDef>Task name</th>
-              <td mat-cell *matCellDef="let element">{{ element.taskName }}</td>
+              <td mat-cell *matCellDef="let element">
+                <span class="data"> {{ element.taskName }}</span>
+              </td>
             </ng-container>
 
             <!-- Weight Column -->
             <ng-container matColumnDef="assignee">
               <th mat-header-cell *matHeaderCellDef>Assignee</th>
-              <td mat-cell *matCellDef="let element">{{ element.assignee }}</td>
+              <td mat-cell *matCellDef="let element">
+                <span>{{ element.assignee }}</span>
+              </td>
             </ng-container>
 
             <!-- Symbol Column -->
             <ng-container matColumnDef="priority">
               <th mat-header-cell *matHeaderCellDef>Priority</th>
-              <td mat-cell *matCellDef="let element">{{ element.priority }}</td>
+              <td mat-cell *matCellDef="let element">
+                <span
+                  [ngClass]="{
+                    medium: element.priority === 'Medium',
+                    high: element.priority === 'High',
+                    low: element.priority === 'Low'
+                  }"
+                  >{{ element.priority }}</span
+                >
+              </td>
             </ng-container>
 
             <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>

@@ -64,6 +64,9 @@
   color: #9aa2ac;
 }
 
+.navbar .top-space {
+  margin-top: 160px;
+}
 @media screen and (max-width: 1180px) {
   .navbar {
     margin: 0 12px;

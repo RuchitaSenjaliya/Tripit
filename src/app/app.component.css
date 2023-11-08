@@ -33,7 +33,7 @@
   color: #27292c !important;
   font-size: 1rem !important;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1024px) {
   .end-content {
     display: none;
   }
