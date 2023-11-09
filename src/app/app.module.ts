@@ -23,6 +23,11 @@ import { CdkDropList, CdkDrag } from '@angular/cdk/drag-drop';
 
 import { MatTableModule } from '@angular/material/table';
 import { MatMenuModule } from '@angular/material/menu';
+import { ProgressBarComponent } from './progress-bar/progress-bar.component';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { CalendersComponent } from './calenders/calenders.component';
+import { TabsComponent } from './tabs/tabs.component';
+import { MatTabsModule } from '@angular/material/tabs';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,17 +35,22 @@ import { MatMenuModule } from '@angular/material/menu';
     RightSidebarComponent,
     TopSearchbarComponent,
     MainContentComponent,
+    ProgressBarComponent,
+    CalendersComponent,
+    TabsComponent,
   ],
   imports: [
     BrowserModule,
     CdkDropList,
     MatDatepickerModule,
     CdkDrag,
+    MatTabsModule,
     MatNativeDateModule,
     MatMenuModule,
     MatCardModule,
     BrowserAnimationsModule,
     MatSidenavModule,
+    MatProgressBarModule,
     MatIconModule,
     MatButtonModule,
     MatDividerModule,

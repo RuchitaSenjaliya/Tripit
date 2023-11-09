@@ -1,0 +1,6 @@
+::ng-deep .mdc-linear-progress__bar-inner {
+  border-color: #ff637d !important;
+}
+::ng-deep .mat-mdc-progress-bar .mdc-linear-progress__buffer-bar {
+  background-color: pink;
+}

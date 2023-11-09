@@ -5,6 +5,9 @@
   font-family: "Sora", sans-serif;
   font-size: 1rem;
 }
+.cursor-pointer {
+  cursor: pointer;
+}
 ::ng-deep .top-bar .travels .mat-mdc-form-field-bottom-align::before,
 ::ng-deep .top-bar .search .mat-mdc-form-field-bottom-align::before {
   content: none !important;
